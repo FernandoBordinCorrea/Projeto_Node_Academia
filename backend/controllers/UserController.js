@@ -12,7 +12,6 @@ module.exports = class UserController {
 
         const { name, email, phone, password, confirmpassword } = req.body
 
-
         if (!name) {
             res.status(422).json({ message: 'O nome é obrigatório' })
             return
